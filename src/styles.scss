@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+$zmienna: #000;
+
+.test {
+    color: $zmienna;
+}
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
