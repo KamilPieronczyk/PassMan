@@ -13,8 +13,7 @@ export class SignInPageComponent implements OnInit {
   ) { }
 
   openHome() {
-    console.log('test');
-    this.router.navigate(['Home']);
+    this.router.navigate(['home']);
   }
 
   ngOnInit() {

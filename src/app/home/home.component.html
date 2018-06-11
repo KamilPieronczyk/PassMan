@@ -2,11 +2,11 @@
   <div class="nav">
     <mat-list>
       <h3 matSubheader>Hasła</h3>
-      <mat-list-item (click)="openTest()">
+      <mat-list-item  (click)="switchMainContent('passwdList')">
         <mat-icon matListIcon>list</mat-icon>
         <h3 matLine> Lista haseł </h3>
       </mat-list-item>
-      <mat-list-item>
+      <mat-list-item (click)="switchMainContent('addPasswd')">
         <mat-icon matListIcon>add</mat-icon>
         <h3 matLine> Dodaj hasło </h3>
       </mat-list-item>
@@ -43,6 +43,6 @@
     </mat-list>
   </div>
   <div class="main-content">
-      <router-outlet name="contentRoutes"></router-outlet>  
+      <router-outlet name='content'></router-outlet>  
   </div>
 </div>
