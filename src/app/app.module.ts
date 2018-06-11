@@ -2,23 +2,35 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { RouterModule, Routes } from '@angular/router';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
+
+const appRoutes: Routes = [
+  { path: '', component: SignInPageComponent},
+];
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SignInPageComponent
   ],
   imports: [
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    ),
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatCheckboxModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
