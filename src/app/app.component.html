@@ -1,10 +1,60 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <div class="logo">
-    <img src="/assets/PassMan.svg" alt="" srcset="" height="200px">
-    <p></p>
-    <button mat-button mat-raised-button color=primary>text</button>
+  <div class="logo">    
+    <img src="/assets/PassMan.svg" alt="" srcset="" height="150px">
+    <p class="mdc-typography--headline3">PassMan</p>
+  </div>
+  <div class="content">
+    <p class="mdc-typography--headline6">Podaj hasło dostępu</p>
+    <mat-form-field class="input">
+        <input matInput placeholder="Haslo">
+    </mat-form-field>
+    <br>
+    <button mat-button color=primary class="button">WEJDŹ</button>
   </div>
 </div>
+<div class="footer">
+  <button mat-button>Zapomniałeś hasła?</button>
+</div>
+
+<style>
+  .mdc-typography--headline6 {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    margin-top: 50px;
+  }
+
+  .content {
+    padding-top: 30px;
+  }
+
+  .input {
+    width: 300px;
+  }
+
+  .logo > p {
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 0 !important;
+  }
+
+  .footer {
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .footer > p {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+</style>
 
 
