@@ -6,11 +6,25 @@
     </div>
     <div class="content">
       <p class="mdc-typography--headline6">Podaj hasło dostępu</p>
-      <mat-form-field class="input">
+      <div *ngIf="0">          
+        <mat-form-field class="input">
+            <input matInput placeholder="Haslo">
+        </mat-form-field>
+        <br>
+        <button mat-button color=primary class="button" (click)="openHome()">WEJDŹ</button>
+      </div>
+      <div *ngIf="1">          
+        <mat-form-field class="input">
           <input matInput placeholder="Haslo">
-      </mat-form-field>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="input">
+          <input matInput placeholder="Powtórz hasło">
+        </mat-form-field>
+        <br>
+        <button mat-button color=primary class="button" (click)="openHome()">UTWÓRZ SWÓJ PIERWSZY SZYFR XD</button>
+      </div>
       <br>
-      <button mat-button color=primary class="button" (click)="openHome()">WEJDŹ</button>
     </div>
   </div>
   <div class="footer">

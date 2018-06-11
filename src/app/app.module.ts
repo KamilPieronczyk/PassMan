@@ -8,6 +8,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatListModule} from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
 import { HomeComponent } from './home/home.component';
 
@@ -21,7 +23,7 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     SignInPageComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     RouterModule.forRoot(
@@ -34,6 +36,8 @@ const appRoutes: Routes = [
     MatCheckboxModule,
     MatFormFieldModule,
     MatInputModule,
+    MatListModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

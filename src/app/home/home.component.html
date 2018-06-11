@@ -1,3 +1,48 @@
-<p>
-  home works!
-</p>
+<div class="container">
+  <div class="nav">
+    <mat-list>
+      <h3 matSubheader>Hasła</h3>
+      <mat-list-item (click)="openTest()">
+        <mat-icon matListIcon>list</mat-icon>
+        <h3 matLine> Lista haseł </h3>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListIcon>add</mat-icon>
+        <h3 matLine> Dodaj hasło </h3>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListIcon>library_add</mat-icon>
+        <h3 matLine> Utwórz grupę </h3>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListIcon>delete</mat-icon>
+        <h3 matLine> Usuń hasła </h3>
+      </mat-list-item>
+      <h3 matSubheader>Notatki</h3>
+      <mat-list-item>
+        <mat-icon matListIcon>view_list</mat-icon>
+        <h3 matLine> Pokaż notatki </h3>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListIcon>add</mat-icon>
+        <h3 matLine> Utwórz notatkę </h3>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListIcon>library_add</mat-icon>
+        <h3 matLine> Utwórz grupę </h3>
+      </mat-list-item>
+      <h3 matSubheader>Pliki</h3>
+      <mat-list-item>
+        <mat-icon matListIcon>folder</mat-icon>
+        <h3 matLine> Zaszyfrowane pliki </h3>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListIcon>fingerprint</mat-icon>
+        <h3 matLine> Zaszyfruj plik </h3>
+      </mat-list-item>
+    </mat-list>
+  </div>
+  <div class="main-content">
+      <router-outlet name="contentRoutes"></router-outlet>  
+  </div>
+</div>

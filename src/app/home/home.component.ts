@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { Router } from '@angular/router';
+import { SignInPageComponent } from '../sign-in-page/sign-in-page.component';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) {
+      const appRoutes: Routes = [
+        { path: '', component: HomeComponent},
+        { path: '1', component: SignInPageComponent},
+      ];
+    }
 
   ngOnInit() {
+  }
+
+  openTest() {
+    this.router.navigate(['1']);
   }
 
 }
