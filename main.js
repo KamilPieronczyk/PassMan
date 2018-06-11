@@ -2,12 +2,10 @@ const {app, BrowserWindow} = require('electron')
 const path = require('path')
 const url = require('url')
 
-import 'hammerjs';
-
 let win
 
 function createWindow () {
-  win = new BrowserWindow({width: 800, height: 600})
+  win = new BrowserWindow({width: 800, height: 600,})
 
   // load the dist folder from Angular
   win.loadURL(url.format({
