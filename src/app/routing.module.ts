@@ -27,4 +27,4 @@ const routes: Routes = [
   }
 ];
 
-export const routingModule: ModuleWithProviders = RouterModule.forRoot(routes,{ enableTracing: true })
+export const routingModule: ModuleWithProviders = RouterModule.forRoot(routes,{ enableTracing: true, useHash:true })
