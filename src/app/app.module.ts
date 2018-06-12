@@ -15,6 +15,8 @@ import { HomeComponent } from './home/home.component';
 import { routingModule } from "./routing.module";
 import { AddPasswdComponent } from './add-passwd/add-passwd.component';
 import { PasswdListComponent } from './passwd-list/passwd-list.component';
+import { PasswdDeleteComponent } from './passwd-delete/passwd-delete.component';
+import { CreatePasswdGroupComponent } from './create-passwd-group/create-passwd-group.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { PasswdListComponent } from './passwd-list/passwd-list.component';
     HomeComponent,
     AddPasswdComponent,
     PasswdListComponent,
+    PasswdDeleteComponent,
+    CreatePasswdGroupComponent,
   ],
   imports: [
     BrowserModule,
