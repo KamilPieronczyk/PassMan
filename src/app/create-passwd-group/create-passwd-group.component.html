@@ -1,3 +1,100 @@
-<p>
-  create-passwd-group works!
-</p>
+<div class="container">
+  <div *ngIf='stepp==1'>
+    <div class="content-one">
+      <div class="form-passwd">
+        <form class="form">
+          <mat-form-field class="form-full-width">
+            <input matInput placeholder="Nazwa Grupy" value="Popcorn">
+          </mat-form-field>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div *ngIf='stepp==2'>
+    <div class="content-two">
+      <div class="passwd-list">
+        <mat-list>
+          <mat-list-item class="subheader-item">
+            <mat-icon matListIcon>library_add</mat-icon>
+            <h3 matLine> Poczta </h3>
+          </mat-list-item>
+          <div class="line"></div>
+          <mat-list-item class="passwd-list-item">
+            <mat-icon matListIcon>library_add</mat-icon>
+            <h3 matLine> Utwórz grupę </h3>
+            <mat-icon matListIcon class="action" style="color: #15EC6F;">check_circle_outline</mat-icon>
+          </mat-list-item>
+          <div class="line"></div>
+          <mat-list-item class="passwd-list-item">
+            <mat-icon matListIcon>library_add</mat-icon>
+            <h3 matLine> Utwórz grupę </h3>
+            <mat-icon matListIcon class="action">check_circle_outline</mat-icon>
+          </mat-list-item>
+          <mat-list-item class="subheader-item">
+            <mat-icon matListIcon>library_add</mat-icon>
+            <h3 matLine> Media społecznościowe </h3>
+          </mat-list-item>
+          <div class="line"></div>
+          <mat-list-item class="passwd-list-item">
+            <mat-icon matListIcon>library_add</mat-icon>
+            <h3 matLine> Utwórz grupę </h3>
+            <mat-icon matListIcon class="action">check_circle_outline</mat-icon>
+          </mat-list-item>
+          <div class="line"></div>
+          <mat-list-item class="passwd-list-item">
+            <mat-icon matListIcon>library_add</mat-icon>
+            <h3 matLine> Utwórz grupę </h3>
+            <mat-icon matListIcon class="action" style="color: #15EC6F;">check_circle_outline</mat-icon>
+          </mat-list-item>
+        </mat-list>
+      </div>
+      <div class="passwd-selectd">
+        <div id='triangle-right'></div>
+        <div class="passwd-data">
+          <div class="passwd-data-content">
+            <div class="name">
+              <mat-icon matListIcon>face</mat-icon>
+              <p>Facebook</p>
+            </div>
+            <div class="secret">
+              <p>Login: facebook</p>
+              <p>Mail: facebook@gmail.com</p>
+              <div class="passwd">
+                <p>Hasło: ******
+                  <mat-icon matListIcon>visibility</mat-icon>
+                </p>
+                <p>
+                  <span>Podwójne kliknięcie kopiuje</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="stepper">
+    <div class="step-stepper">
+      <div class="circle selected" id='one'></div>
+      <div class="circle" id='two'></div>
+    </div>
+    <div class="btn" *ngIf='stepp==1'>
+      <button mat-button (click)="createGroup()">
+        Zakończ
+      </button>
+      <button mat-button (click)="nextStepp()">
+        Dalej
+        <mat-icon>arrow_forward_ios</mat-icon>
+      </button>
+    </div>
+    <div class="btn btn-second" *ngIf='stepp==2'>
+      <button mat-button (click)="prevStepp()">
+        Wstecz
+      </button>
+      <button mat-button (click)="createGroup()">
+        Zakończ
+      </button>
+    </div>
+    <div class="cls"></div>
+  </div>
+</div>
