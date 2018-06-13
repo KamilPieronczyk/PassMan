@@ -20,6 +20,7 @@
   position: relative;
   width: 50%;
   height: 600px;
+  font-family: Roboto;
 }
 
 #triangle-right {
@@ -95,5 +96,6 @@
   height: 28px;
   mat-icon{
     float: right;
+    margin-left: 10px;
   }
 }

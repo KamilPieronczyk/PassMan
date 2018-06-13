@@ -6,7 +6,6 @@ import { SignInPageComponent } from '../sign-in-page/sign-in-page.component';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  
 })
 export class HomeComponent implements OnInit {
 
@@ -18,7 +17,7 @@ export class HomeComponent implements OnInit {
   }
 
   switchMainContent(path = '') {
-    this.router.navigate(['/home', {outlets: {'content': [path]}}])
+    this.router.navigate(['/home', {outlets: {'content': [path]}}]);
   }
 
 }
