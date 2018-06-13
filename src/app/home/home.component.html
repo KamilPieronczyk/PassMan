@@ -19,24 +19,24 @@
         <h3 matLine> Usuń </h3>
       </mat-list-item>
       <h3 matSubheader>Notatki</h3>
-      <mat-list-item (click)="switchMainContent()">
+      <mat-list-item (click)="switchMainContent('noteList')">
         <mat-icon matListIcon>view_list</mat-icon>
         <h3 matLine> Pokaż notatki </h3>
       </mat-list-item>
-      <mat-list-item (click)="switchMainContent()">
+      <mat-list-item (click)="switchMainContent('createNote')">
         <mat-icon matListIcon>add</mat-icon>
         <h3 matLine> Utwórz notatkę </h3>
       </mat-list-item>
-      <mat-list-item (click)="switchMainContent()">
+      <mat-list-item (click)="switchMainContent('createNoteGroup')">
         <mat-icon matListIcon>library_add</mat-icon>
         <h3 matLine> Utwórz grupę </h3>
       </mat-list-item>
       <h3 matSubheader>Pliki</h3>
-      <mat-list-item (click)="switchMainContent()">
+      <mat-list-item (click)="switchMainContent('encFilesList')">
         <mat-icon matListIcon>folder</mat-icon>
         <h3 matLine> Zaszyfrowane pliki </h3>
       </mat-list-item>
-      <mat-list-item (click)="switchMainContent()">
+      <mat-list-item (click)="switchMainContent('encFile')">
         <mat-icon matListIcon>fingerprint</mat-icon>
         <h3 matLine> Zaszyfruj plik </h3>
       </mat-list-item>
