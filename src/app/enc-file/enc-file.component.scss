@@ -1,0 +1,71 @@
+.container {
+  width: 580px;
+  height: 600px;
+}
+
+.content {
+  width: 100%;
+  height: 575px;
+  position: relative;
+  .drag-zone {
+    width: 100%;
+    height: 475px;
+    .border-gray {
+      position: absolute;
+      width: 600px;
+      height: 400px;
+      left: 0;
+      top: 25px;
+      border: 15px solid #E0E0E0;
+      box-sizing: border-box;
+      border-radius: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .element {
+        color: #828282;
+        width: 200px;
+        height: 150px;
+        text-align: center;
+        position: relative;
+        .icon {
+          width: 100%;
+          height: 100px;
+          mat-icon {
+            font-size: 100px;
+            margin-right: 70px;
+          }
+        }
+        .text {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .method {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    form {
+      mat-form-field {
+        float: left;
+      }
+    }
+  }
+}
+
+.progressbar {
+  width: 100%;
+  height: 25px;
+  margin: auto;
+}
+
+#file-input{
+    opacity: 0;
+}

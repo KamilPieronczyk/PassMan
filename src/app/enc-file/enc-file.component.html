@@ -1,3 +1,31 @@
-<p>
-  enc-file works!
-</p>
+<div class="container">
+  <input type="file" id="file-input">
+  <div class="content">
+    <label for="file-input">
+      <div class="drag-zone" id="inp-file">
+        <div class="border-gray">
+          <div class="element">
+            <div class="icon">
+              <mat-icon>note_add</mat-icon>
+            </div>
+            <div class="text">Drag and drop file: Flitz.apk</div>
+          </div>
+        </div>
+      </div>
+    </label>
+    <div class="method">
+      <form>
+        <mat-form-field>
+          <mat-select placeholder="Szyfrowanie" name="method">
+            <mat-option [value]="SHA-256">SHA-256</mat-option>
+            <mat-option [value]="SHA-256">SHA-256</mat-option>
+            <mat-option [value]="SHA-256">SHA-256</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </form>
+    </div>
+    <div class="progressbar">
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </div>
+  </div>
+</div>

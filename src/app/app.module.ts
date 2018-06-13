@@ -10,6 +10,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
 import { HomeComponent } from './home/home.component';
 
@@ -51,7 +52,8 @@ import { CreateNoteGroupComponent } from './create-note-group/create-note-group.
     MatListModule,
     MatIconModule,
     routingModule,
-    MatSelectModule
+    MatSelectModule,
+    MatProgressBarModule
   ],
   exports: [RouterModule],
   providers: [],
