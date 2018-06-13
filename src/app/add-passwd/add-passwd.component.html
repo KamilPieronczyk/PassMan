@@ -1,6 +1,66 @@
 <div class="container">
-  <div class="content">
-    <h1>Strona z dodawaniem nowego hasła</h1>
-    <a routerLink="/home">Home</a>
+  <div *ngIf='stepp==1'>
+    <div class="content-one">
+      <div class="pg-title">
+        <p>Wybierz platformę</p>
+        <div class="line"></div>
+      </div>
+      <div class="platform-list">
+        <mat-list>
+          <mat-list-item class="brand-selected">
+            <mat-icon matListIcon>account_balance</mat-icon>
+            <h3 matLine> Google </h3>
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon matListIcon>account_balance</mat-icon>
+            <h3 matLine> Facebook </h3>
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon matListIcon>account_balance</mat-icon>
+            <h3 matLine> Microsoft </h3>
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon matListIcon>account_balance</mat-icon>
+            <h3 matLine> Github </h3>
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon matListIcon>account_balance</mat-icon>
+            <h3 matLine> Wirtualna Polska </h3>
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon matListIcon>account_balance</mat-icon>
+            <h3 matLine> Protonmail </h3>
+          </mat-list-item>
+        </mat-list>
+      </div>
+    </div>
+  </div>
+  <div *ngIf='stepp==2'>
+    <div class="content-two">
+      <div class="brand">
+        <mat-icon matListIcon>face</mat-icon>
+        <p>Facebook</p>
+      </div>
+      <div class="form-passwd">
+
+      </div>
+    </div>
+  </div>
+  <div class="stepper">
+    <div class="step-stepper">
+      <div class="circle selected" id='one'></div>
+      <div class="circle" id='two'></div>
+    </div>
+    <div class="btn">
+      <button mat-button (click)="nextStepp()" *ngIf='stepp==1'>
+        Dalej
+        <mat-icon>arrow_forward_ios</mat-icon>
+      </button>
+      <button mat-button (click)="setPasswd()" *ngIf='stepp==2'>
+        Zapisz
+        <mat-icon>arrow_forward_ios</mat-icon>
+      </button>
+    </div>
+    <div class="cls"></div>
   </div>
 </div>

@@ -10,7 +10,7 @@ export class PasswdListComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.error('Router passwdList działa !!!');
+    
   }
 
 }

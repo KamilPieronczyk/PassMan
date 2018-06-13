@@ -1,0 +1,86 @@
+.container {
+  position: relative;
+  width: 580px;
+  height: 600px;
+}
+
+.content-one {
+  .pg-title {
+    width: 100%;
+    text-align: center;
+  }
+  .platform-list {
+    overflow: auto;
+  }
+  .line {
+    background-color: #C4C4C4;
+    width: 100%;
+    height: 1px;
+    margin: auto;
+  }
+  .brand-selected {
+    background-color: #E0E0E0;
+    border-radius: 50px;
+  }
+}
+
+.content-two {
+  .brand {
+    width: 100%;
+    height: 25px;
+    mat-icon {
+      float: left;
+      margin: 0 -35px 0 40px;
+    }
+    p {
+      padding-top: 2px;
+    }
+  }
+  .form-passwd{
+    
+  }
+}
+
+.stepper {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  .step-stepper {
+    width: 487px;
+    height: 40px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .circle {
+      margin-left: 75px;
+      border-radius: 50%;
+      height: 8px;
+      width: 8px;
+      float: left;
+      background-color: #C4C4C4
+    }
+    .selected {
+      background-color: #4B4B4B
+    }
+    .circle:last-child {
+      margin-left: 7px;
+    }
+  }
+  .btn {
+    height: 40px;
+    width: 88px;
+    float: left;
+    color: white;
+    button {
+      background-color: #2F80ED;
+      border-radius: 25px;
+    }
+  }
+}
+
+.cls {
+  clear: both;
+}
