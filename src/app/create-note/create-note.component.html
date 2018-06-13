@@ -1,3 +1,34 @@
-<p>
-  create-note works!
-</p>
+<div class="container">
+  <div class="content">
+    <form class="form">
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Tytuł notatki">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <textarea matInput placeholder="Treść notatki" rows="21" cols="1" style="resize: none;"></textarea>
+      </mat-form-field>
+    </form>
+  </div>
+  <div class="toolbax">
+    <div class="group-option">
+      <mat-form-field matLine>
+        <mat-select placeholder="Dodaj do grupy">
+          <mat-option [value]="1">
+            1
+          </mat-option>
+          <mat-option [value]="2">
+            2
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-icon matLine id="add" (click)="addGroup()">add</mat-icon>
+    </div>
+    <div class="btn">
+      <mat-icon matLine id="delete" (click)="end()">delete</mat-icon>
+      <button mat-button (click)="addNote()">
+        <mat-icon matSufix>done</mat-icon>
+        Zapisz
+      </button>
+    </div>
+  </div>
+</div>

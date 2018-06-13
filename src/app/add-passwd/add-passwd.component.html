@@ -51,25 +51,25 @@
           <mat-form-field class="form-full-width">
             <input matInput placeholder="E-mail">
           </mat-form-field>
-
           <mat-form-field class="form-full-width">
             <input type="password" matInput placeholder="Hasło">
             <button mat-button matSuffix mat-icon-button>
               <mat-icon>visibility</mat-icon>
             </button>
           </mat-form-field>
-
-          <mat-form-field matLine>
-              <mat-icon matPrefix id="add">add</mat-icon>
-            <mat-select placeholder="Dodaj do grupy">
-              <mat-option [value]="1">
-                1
-              </mat-option>
-              <mat-option [value]="2">
-                2
-              </mat-option>
-            </mat-select>
-          </mat-form-field>
+          <div style="display: flex;justify-content: center;align-items: center;">
+            <mat-icon matPrefix id="add">add</mat-icon>
+            <mat-form-field matLine>
+              <mat-select placeholder="Dodaj do grupy">
+                <mat-option [value]="1">
+                  1
+                </mat-option>
+                <mat-option [value]="2">
+                  2
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
         </form>
       </div>
     </div>

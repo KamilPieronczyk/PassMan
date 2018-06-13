@@ -12,4 +12,16 @@ export class CreateNoteComponent implements OnInit {
   ngOnInit() {
   }
 
+  addNote(){
+    console.log("Notatka dodana")
+  }
+
+  addGroup(){
+    console.log("Grupa dodana")
+  }
+
+  end(){
+    console.log('Zakończono')
+  }
+
 }

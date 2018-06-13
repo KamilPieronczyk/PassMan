@@ -1,0 +1,61 @@
+.container {
+  position: relative;
+  width: 580px;
+  height: 600px;
+}
+
+.content {
+  width: 100%;
+  height: 500px;
+  .form {
+    padding-top: 15px;
+    width: 100%;
+  }
+  .full-width {
+    width: 100%;
+  }
+}
+
+.toolbax {
+  position: absolute;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  .group-option {
+    float: left;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    mat-select {
+      margin-right: 50px;
+    }
+    #add {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+  }
+  .btn {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      height: 40px;
+      color: white;
+      background-color: #2F80ED;
+      border-radius: 25px;
+      text-transform: uppercase;
+    }
+    #delete {
+      cursor: pointer;
+      top: 15px;
+      color: #E51A1A;
+      opacity: 0.7;
+    }
+  }
+}
