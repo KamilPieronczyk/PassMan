@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class AddPasswdComponent implements OnInit {
 
   public stepp;
+  value = 'Clear me';
   constructor(private router: Router) {
     this.stepp = 2;
   }

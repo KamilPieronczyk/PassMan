@@ -38,11 +38,39 @@
   <div *ngIf='stepp==2'>
     <div class="content-two">
       <div class="brand">
-        <mat-icon matListIcon>face</mat-icon>
-        <p>Facebook</p>
+        <div class="name">
+          <mat-icon matPrefix>face</mat-icon>
+          <span matLine>Facebook</span>
+        </div>
       </div>
       <div class="form-passwd">
+        <form class="form">
+          <mat-form-field class="form-full-width">
+            <input matInput placeholder="Login" value="Sushi">
+          </mat-form-field>
+          <mat-form-field class="form-full-width">
+            <input matInput placeholder="E-mail">
+          </mat-form-field>
 
+          <mat-form-field class="form-full-width">
+            <input type="password" matInput placeholder="Hasło">
+            <button mat-button matSuffix mat-icon-button>
+              <mat-icon>visibility</mat-icon>
+            </button>
+          </mat-form-field>
+
+          <mat-form-field matLine>
+              <mat-icon matPrefix id="add">add</mat-icon>
+            <mat-select placeholder="Dodaj do grupy">
+              <mat-option [value]="1">
+                1
+              </mat-option>
+              <mat-option [value]="2">
+                2
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </form>
       </div>
     </div>
   </div>

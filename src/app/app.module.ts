@@ -13,6 +13,8 @@ import {MatIconModule} from '@angular/material/icon';
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
 import { HomeComponent } from './home/home.component';
 
+import {MatSelectModule} from '@angular/material/select';
+
 import { routingModule } from "./routing.module";
 import { AddPasswdComponent } from './add-passwd/add-passwd.component';
 import { PasswdListComponent } from './passwd-list/passwd-list.component';
@@ -48,7 +50,8 @@ import { CreateNoteGroupComponent } from './create-note-group/create-note-group.
     MatInputModule,
     MatListModule,
     MatIconModule,
-    routingModule
+    routingModule,
+    MatSelectModule
   ],
   exports: [RouterModule],
   providers: [],
