@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { AlertComponent } from './../alert/alert.component';
 
 @Component({
   selector: 'app-passwd-delete',
@@ -6,25 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./passwd-delete.component.scss']
 })
 export class PasswdDeleteComponent implements OnInit {
+  @ViewChild(AlertComponent) Alert: AlertComponent;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  passwdDelete(){
-   document.getElementById('alert').classList.add('hidden');
-   console.log("Hasło zostało usunięte");
+  passwdDelete() {
+   this.Alert.passwdDelete();
   }
 
-  showAlert(){
-    document.getElementById('alert').classList.remove('hidden');
+  showAlert() {
+    this.Alert.showAlert();
   }
 
-  closeAlert(){
-    document.getElementById('alert').classList.add('hidden');
-    console.log("Anulowano");
+  closeAlert() {
+    this.Alert.closeAlert();
   }
-  
 
 }
