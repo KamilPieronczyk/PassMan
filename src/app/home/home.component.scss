@@ -1,19 +1,25 @@
 @import '~@angular/material/theming';
-.flex-container{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: stretch;
+.flex-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
 }
-.nav{
-    flex-basis: 220px;
-    height: 600px;
+
+.nav {
+  flex-basis: 220px;
+  height: 600px;
 }
-.main-content{
-    height: 600px;
-    width: 580px;
+
+.main-content {
+  height: 600px;
+  width: 580px;
 }
 
 .mat-subheader {
-    color: map_get($mat-blue, 500);
+  color: map_get($mat-blue, 500);
+}
+
+mat-list-item {
+  cursor: pointer;
 }
