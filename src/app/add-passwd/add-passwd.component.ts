@@ -23,6 +23,12 @@ export class AddPasswdComponent implements OnInit {
     document.getElementById('two').classList.add('selected');
   }
 
+  prevStepp(){
+    this.stepp = 1;
+    document.getElementById('one').classList.add('selected');
+    document.getElementById('two').classList.remove('selected');
+  }
+
   setPasswd(){
     console.log("Zapisano")
     this.router.navigate(['/home', {outlets: {'content': ['passwdList']}}]);

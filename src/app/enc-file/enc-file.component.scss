@@ -1,21 +1,23 @@
 .container {
   width: 580px;
   height: 600px;
+  margin: 0;
+  padding: 0;
 }
 
 .content {
   width: 100%;
-  height: 575px;
+  height: 600px;
   position: relative;
   .drag-zone {
     width: 100%;
-    height: 475px;
+    height: 430px;
     .border-gray {
       position: absolute;
-      width: 600px;
-      height: 400px;
+      width: 560px;
+      height: 415px;
       left: 0;
-      top: 25px;
+      top: 15px;
       border: 15px solid #E0E0E0;
       box-sizing: border-box;
       border-radius: 25px;
@@ -46,26 +48,28 @@
       }
     }
   }
-  .method {
+
+  .progressbar {
     width: 100%;
-    height: 100px;
+    height: 170px;
+    margin: auto;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    form {
-      mat-form-field {
-        float: left;
-      }
+    align-items: center;
+    position: relative;
+    mat-progress-bar {
+      padding: 5px 5px 0 0;
+      width: 85%;
+      float: left;
+    }
+    span{
+      position: absolute;
+      right: 15px;
+      float: left;
     }
   }
+
 }
 
-.progressbar {
-  width: 100%;
-  height: 25px;
-  margin: auto;
-}
-
-#file-input{
-    opacity: 0;
+#file-input {
+  opacity: 0;
 }

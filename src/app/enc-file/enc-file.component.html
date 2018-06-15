@@ -1,11 +1,11 @@
 <div class="container">
-  <input type="file" id="file-input">
   <div class="content">
     <label for="file-input">
       <div class="drag-zone" id="inp-file">
         <div class="border-gray">
           <div class="element">
             <div class="icon">
+              <input type="file" id="file-input">
               <mat-icon>note_add</mat-icon>
             </div>
             <div class="text">Drag and drop file: Flitz.apk</div>
@@ -13,19 +13,8 @@
         </div>
       </div>
     </label>
-    <div class="method">
-      <form>
-        <mat-form-field>
-          <mat-select placeholder="Szyfrowanie" name="method">
-            <mat-option >SHA-256</mat-option>
-            <mat-option >SHA-256</mat-option>
-            <mat-option >SHA-256</mat-option>
-          </mat-select>
-        </mat-form-field>
-      </form>
-    </div>
     <div class="progressbar">
-      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar><span>100%</span>
     </div>
   </div>
 </div>

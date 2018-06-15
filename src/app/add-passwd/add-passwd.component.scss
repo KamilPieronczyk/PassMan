@@ -7,9 +7,12 @@
 .content-one {
   width: 580px;
   height: 600px;
+  padding-top: 0;
+  margin-top: 0;
   .pg-title {
     width: 100%;
     text-align: center;
+    padding-top: 15px;
   }
   .platform-list {
     overflow: auto;
@@ -78,7 +81,7 @@
   bottom: 0;
   z-index: 2;
   .step-stepper {
-    width: 487px;
+    width: 360px;
     height: 40px;
     float: left;
     display: flex;
@@ -101,12 +104,19 @@
   }
   .btn {
     height: 40px;
-    width: 88px;
+    width: 220px;
     float: left;
     color: white;
     button {
+      text-transform: uppercase;
       background-color: #2F80ED;
       border-radius: 25px;
+    }
+    button:nth-child(2) {
+      margin-left: 5px;
+    }
+    #btn-1{
+      margin-left: 88px;
     }
   }
 }

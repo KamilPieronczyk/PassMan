@@ -2,7 +2,7 @@
   <div *ngIf='stepp==1'>
     <div class="content-one">
       <div class="pg-title">
-        <p>Wybierz platformę</p>
+        <span>Wybierz platformę</span>
         <div class="line"></div>
       </div>
       <div class="platform-list">
@@ -75,20 +75,24 @@
     </div>
   </div>
   <div class="stepper">
-    <div class="step-stepper">
-      <div class="circle selected" id='one'></div>
-      <div class="circle" id='two'></div>
+      <div class="step-stepper">
+        <div class="circle selected" id='one'></div>
+        <div class="circle" id='two'></div>
+      </div>
+      <div class="btn" *ngIf='stepp==1'>
+        <button id="btn-1" mat-button (click)="nextStepp()">
+          Dalej
+          <mat-icon>arrow_forward_ios</mat-icon>
+        </button>
+      </div>
+      <div class="btn btn-second" *ngIf='stepp==2'>
+        <button mat-button (click)="prevStepp()">
+          Wstecz
+        </button>
+        <button mat-button (click)="createGroup()">
+          Zakończ
+        </button>
+      </div>
+      <div class="cls"></div>
     </div>
-    <div class="btn">
-      <button mat-button (click)="nextStepp()" *ngIf='stepp==1'>
-        Dalej
-        <mat-icon>arrow_forward_ios</mat-icon>
-      </button>
-      <button mat-button (click)="setPasswd()" *ngIf='stepp==2'>
-        Zapisz
-        <mat-icon>arrow_forward_ios</mat-icon>
-      </button>
-    </div>
-    <div class="cls"></div>
-  </div>
 </div>
