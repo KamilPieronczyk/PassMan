@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from "@angular/router";
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -16,7 +16,7 @@ import { HomeComponent } from './home/home.component';
 
 import {MatSelectModule} from '@angular/material/select';
 
-import { routingModule } from "./routing.module";
+import { routingModule } from './routing.module';
 import { AddPasswdComponent } from './add-passwd/add-passwd.component';
 import { PasswdListComponent } from './passwd-list/passwd-list.component';
 import { PasswdDeleteComponent } from './passwd-delete/passwd-delete.component';
@@ -26,6 +26,7 @@ import { CreateNoteComponent } from './create-note/create-note.component';
 import { EncFilesListComponent } from './enc-files-list/enc-files-list.component';
 import { EncFileComponent } from './enc-file/enc-file.component';
 import { CreateNoteGroupComponent } from './create-note-group/create-note-group.component';
+import { AlertComponent } from './alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { CreateNoteGroupComponent } from './create-note-group/create-note-group.
     EncFilesListComponent,
     EncFileComponent,
     CreateNoteGroupComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +55,7 @@ import { CreateNoteGroupComponent } from './create-note-group/create-note-group.
     MatIconModule,
     routingModule,
     MatSelectModule,
-    MatProgressBarModule
+    MatProgressBarModule,
   ],
   exports: [RouterModule],
   providers: [],
