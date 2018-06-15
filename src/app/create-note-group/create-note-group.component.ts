@@ -31,7 +31,7 @@ export class CreateNoteGroupComponent implements OnInit {
 
   createGroup(){
     console.log("Zapisano")
-    this.router.navigate(['/home', {outlets: {'content': ['passwdList']}}]);
+    this.router.navigate(['/home', {outlets: {'content': ['noteList']}}]);
   }
 
 

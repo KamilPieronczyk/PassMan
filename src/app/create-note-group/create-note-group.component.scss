@@ -27,97 +27,6 @@
     }
   }
   
-  .content-two {
-    display: flex;
-    align-items: center;
-    width: 580px;
-    height: 550px;
-    .passwd-list {
-      width: 50%;
-      background-color: #E8EAED;
-      height: 550px;
-      position: relative;
-      mat-list {
-        overflow: auto;
-      }
-    }
-    .passwd-selectd {
-      position: relative;
-      width: 50%;
-      height: 550px;
-    }
-    #triangle-right {
-      position: absolute;
-      margin-top: 289px;
-      border-top: 15px solid transparent;
-      border-left: 22px solid #E8EAED;
-      border-bottom: 22px solid transparent;
-    }
-    .line {
-      background-color: #C4C4C4;
-      width: 85%;
-      height: 1px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .passwd-list-item {
-      padding: 0 15px 0 15px;
-      position: relative;
-      .action {
-        position: absolute;
-        right: 0;
-      }
-    }
-    .subheader-item {
-      position: relative;
-      h3 {
-        margin-left: -10px;
-      }
-      .action {
-        position: absolute;
-        right: 15px;
-      }
-    }
-    .passwd-data {
-      width: 100%;
-      min-height: 100%;
-      display: flex;
-      justify-content: center;
-      margin-top: 100px;
-    }
-    .passwd-data-content {
-      height: 300px;
-      text-align: center;
-    }
-    .name {
-      width: 100%;
-      height: 25px;
-      mat-icon {
-        float: left;
-        margin: 0 -35px 0 40px;
-      }
-      p {
-        padding-top: 2px;
-      }
-    }
-    .secret {
-      text-align: center;
-      padding-top: 25px;
-      .passwd {
-        p:first-child {
-          mat-icon {
-            color: #ff9999;
-          }
-        }
-        p:last-child {
-          margin-top: -10px;
-          color: black;
-          opacity: 0.4
-        }
-      }
-    }
-  }
-  
   .stepper {
     width: 100%;
     height: 50px;
@@ -163,10 +72,25 @@
   }
   
   .second-stepp {
-    background: linear-gradient(90deg, #E8EAED 50%, #ffffff 50%);
+    //background: linear-gradient(90deg, #E8EAED 50%, #ffffff 50%);
   }
   
   .cls {
     clear: both;
   }
+
   
+.content-two {
+  padding: 10px;
+  width: 580px;  
+  display: block;
+  justify-content: center;
+  p {
+    font-size: 14px;
+    font-family:Roboto;
+    padding: 14px;
+  }
+  .header {
+    margin-bottom: 20px; 
+  }
+}

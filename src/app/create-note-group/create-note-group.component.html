@@ -12,65 +12,23 @@
     </div>
     <div *ngIf='stepp==2'>
       <div class="content-two">
-        <div class="passwd-list">
-          <mat-list>
-            <mat-list-item class="subheader-item">
-              <mat-icon matListIcon>library_add</mat-icon>
-              <h3 matLine> Poczta </h3>
-            </mat-list-item>
-            <div class="line"></div>
-            <mat-list-item class="passwd-list-item">
-              <mat-icon matListIcon>library_add</mat-icon>
-              <h3 matLine> Utwórz grupę </h3>
-              <mat-icon matListIcon class="action" style="color: #15EC6F;">check_circle_outline</mat-icon>
-            </mat-list-item>
-            <div class="line"></div>
-            <mat-list-item class="passwd-list-item">
-              <mat-icon matListIcon>library_add</mat-icon>
-              <h3 matLine> Utwórz grupę </h3>
-              <mat-icon matListIcon class="action">check_circle_outline</mat-icon>
-            </mat-list-item>
-            <mat-list-item class="subheader-item">
-              <mat-icon matListIcon>library_add</mat-icon>
-              <h3 matLine> Media społecznościowe </h3>
-            </mat-list-item>
-            <div class="line"></div>
-            <mat-list-item class="passwd-list-item">
-              <mat-icon matListIcon>library_add</mat-icon>
-              <h3 matLine> Utwórz grupę </h3>
-              <mat-icon matListIcon class="action">check_circle_outline</mat-icon>
-            </mat-list-item>
-            <div class="line"></div>
-            <mat-list-item class="passwd-list-item">
-              <mat-icon matListIcon>library_add</mat-icon>
-              <h3 matLine> Utwórz grupę </h3>
-              <mat-icon matListIcon class="action" style="color: #15EC6F;">check_circle_outline</mat-icon>
-            </mat-list-item>
-          </mat-list>
-        </div>
-        <div class="passwd-selectd">
-          <div id='triangle-right'></div>
-          <div class="passwd-data">
-            <div class="passwd-data-content">
-              <div class="name">
-                <mat-icon matListIcon>face</mat-icon>
-                <p>Facebook</p>
-              </div>
-              <div class="secret">
-                <p>Login: facebook</p>
-                <p>Mail: facebook@gmail.com</p>
-                <div class="passwd">
-                  <p>Hasło: ******
-                    <mat-icon matListIcon>visibility</mat-icon>
-                  </p>
-                  <p>
-                    <span>Podwójne kliknięcie kopiuje</span>
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div class="header mdc-typography--headline6">
+            Dodaj notatki do grupy
           </div>
-        </div>
+          <mat-selection-list #shoes class="notice-list">
+            <mat-list-option>
+              Plik 1 
+            </mat-list-option>
+            <mat-list-option>
+              Plik 2
+            </mat-list-option>
+            <mat-list-option>
+              Plik 3
+            </mat-list-option>
+          </mat-selection-list>       
+          <p>
+            Zaznaczone notatki: {{shoes.selectedOptions.selected.length}}
+          </p> 
       </div>
     </div>
     <div class="stepper" id="sr">
