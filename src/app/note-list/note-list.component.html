@@ -1,3 +1,27 @@
-<p>
-  note-list works!
-</p>
+<div class="container" oncontextmenu="return false;">
+  <div class="header mdc-typography--headline6">
+    Notatki
+  </div>
+  <div class="notices">
+    <div class="notice" (click)="contextMenu($event)">
+      <mat-icon class="notice-icon">insert_drive_file</mat-icon>
+      <p class="notice-name">Notatka</p>
+    </div>
+    <div class="notice" (click)="contextMenu($event)">
+      <mat-icon class="notice-icon">insert_drive_file</mat-icon>
+      <p class="notice-name">Notatka</p>
+    </div>
+  </div>
+</div>
+
+<div class="context-menu" [ngStyle]="rightPanelStyle" (clickOutside)="onClickedOutside()">
+  <div class="item">
+    kopiuj
+  </div>
+  <div class="item">
+    kopiuj
+  </div>
+  <div class="item">
+    kopiuj
+  </div>
+</div>

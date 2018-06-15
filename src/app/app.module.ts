@@ -27,6 +27,7 @@ import { EncFilesListComponent } from './enc-files-list/enc-files-list.component
 import { EncFileComponent } from './enc-file/enc-file.component';
 import { CreateNoteGroupComponent } from './create-note-group/create-note-group.component';
 import { AlertComponent } from './alert/alert.component';
+import { ClickOutsideModule } from 'ng-click-outside';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ import { AlertComponent } from './alert/alert.component';
     EncFilesListComponent,
     EncFileComponent,
     CreateNoteGroupComponent,
-    AlertComponent
+    AlertComponent,    
   ],
   imports: [
     BrowserModule,
@@ -56,6 +57,7 @@ import { AlertComponent } from './alert/alert.component';
     routingModule,
     MatSelectModule,
     MatProgressBarModule,
+    ClickOutsideModule
   ],
   exports: [RouterModule],
   providers: [],
