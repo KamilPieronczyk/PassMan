@@ -15,6 +15,11 @@ export class AlertComponent implements OnInit {
 
   }
 
+  /**
+   * Funkcja która pokazuje alert (o,fun). Wartośći:
+   * o => obiekt - dane => type(warning,succes,normal), title, message, question;
+   * fun => obiekt - co ma się wykonać + zmienna która zawiera funkcję => true, false;
+   */
   show(o,fun): void {
     this.o.type = o.type;
     this.o.title = o.title;
