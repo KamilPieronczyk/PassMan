@@ -7,24 +7,37 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlertComponent implements OnInit {
 
+  public o:any = new Array;
+  public fun;
   constructor() { }
 
   ngOnInit() {
 
   }
 
-  passwdDelete() {
-    document.getElementById('alert').classList.add('hidden');
-    console.log('Hasło zostało usunięte');
-   }
+  show(o,fun): void {
+    this.o.type = o.type;
+    this.o.title = o.title;
+    this.o.message = o.message;
+    this.o.question = o.question;
+    this.fun = fun;
+    document.getElementById('type').classList.add(this.o.type);
+    document.getElementById('title').classList.add(`${this.o.type}-color`);
+    document.getElementById('alert').classList.remove('hidden');
+  }
 
-   showAlert() {
-     document.getElementById('alert').classList.remove('hidden');
-   }
-
-   closeAlert() {
-     document.getElementById('alert').classList.add('hidden');
-     console.log('Anulowano');
-   }
+  userChoice(choice:boolean): void {
+    switch(choice){
+      case true:{
+        this.fun.true();
+        document.getElementById('alert').classList.add('hidden');
+        break;
+      }
+        case false: {
+        this.fun.false();
+        document.getElementById('alert').classList.add('hidden');
+      }
+    }
+  }
 
 }

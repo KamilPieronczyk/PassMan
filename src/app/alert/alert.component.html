@@ -1,16 +1,16 @@
-<div class="alert-warning hidden" id="alert">
+<div class="alert hidden" id="alert">
   <div class="opacity-layer"></div>
-  <div class="alert-content">
+  <div class="alert-content" id="type">
     <div class="title">
-      <span>Uwaga!</span>
+      <span id="title">{{o.title}}</span>
     </div>
     <div class="messages">
-      <span>Wykonanie tej czynnosci spowoduje trwale usuniecie tego hasla.</span>
+      <span>{{o.message}}</span>
     </div>
-    <div class="confirm-question">Czy chcesz kontynuowac?</div>
+    <div class="confirm-question">{{o.question}}</div>
     <div class="confirm-btn">
-      <button mat-button (click)='closeAlert()'>Zamknij</button>
-      <button mat-button (click)='passwdDelete()'>Ok</button>
+      <button mat-button (click)='userChoice(false)'>Zamknij</button>
+      <button mat-button (click)='userChoice(true)'>Ok</button>
     </div>
   </div>
 </div>
