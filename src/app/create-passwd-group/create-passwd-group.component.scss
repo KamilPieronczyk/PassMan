@@ -1,12 +1,12 @@
 .container {
-  position: relative;
-  width: 580px;
-  height: 600px;
+  width: 100%;
+  height: 100%;
 }
 
 .content-one {
-  width: 580px;
-  height: 600px;
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,21 +30,22 @@
 .content-two {
   display: flex;
   align-items: center;
-  width: 580px;
-  height: 550px;
+  width: 100%;
+  height: 100%;
   .passwd-list {
     width: 50%;
+    max-width: 400px;
     background-color: #E8EAED;
-    height: 550px;
+    height: 100%;
     position: relative;
     mat-list {
       overflow: auto;
     }
   }
   .passwd-selectd {
+    flex: 1;
     position: relative;
-    width: 50%;
-    height: 550px;
+    height: 100%;
   }
   #triangle-right {
     position: absolute;
@@ -83,7 +84,8 @@
     min-height: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    align-items: center;
+    font-family: Roboto;
   }
   .passwd-data-content {
     height: 300px;
@@ -124,15 +126,16 @@
   position: absolute;
   bottom: 0;
   z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   .step-stepper {
-    width: 360px;
     height: 40px;
-    float: left;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 20px;
     .circle {
-      margin-left: 75px;
       border-radius: 50%;
       height: 8px;
       width: 8px;
@@ -148,8 +151,6 @@
   }
   .btn {
     height: 40px;
-    width: 220px;
-    float: left;
     color: white;
     button {
       text-transform: uppercase;
@@ -160,12 +161,4 @@
       margin-left: 5px;
     }
   }
-}
-
-.second-stepp {
-  background: linear-gradient(90deg, #E8EAED 50%, #ffffff 50%);
-}
-
-.cls {
-  clear: both;
 }

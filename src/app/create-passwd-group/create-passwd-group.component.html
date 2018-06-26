@@ -1,17 +1,14 @@
 <div class="container">
-  <div *ngIf='stepp==1'>
-    <div class="content-one">
-      <div class="form-passwd">
-        <form class="form">
-          <mat-form-field class="form-full-width">
-            <input matInput placeholder="Nazwa Grupy" value="Popcorn">
-          </mat-form-field>
-        </form>
-      </div>
+  <div *ngIf='stepp==1' class="content-one">
+    <div class="form-passwd">
+      <form class="form">
+        <mat-form-field class="form-full-width">
+          <input matInput placeholder="Nazwa Grupy" value="Popcorn">
+        </mat-form-field>
+      </form>
     </div>
   </div>
-  <div *ngIf='stepp==2'>
-    <div class="content-two">
+    <div *ngIf='stepp==2' class="content-two">
       <div class="passwd-list">
         <mat-list>
           <mat-list-item class="subheader-item">
@@ -72,7 +69,6 @@
         </div>
       </div>
     </div>
-  </div>
   <div class="stepper" id="sr">
     <div class="step-stepper">
       <div class="circle selected" id='one'></div>
@@ -95,6 +91,5 @@
         Zakończ
       </button>
     </div>
-    <div class="cls"></div>
   </div>
 </div>

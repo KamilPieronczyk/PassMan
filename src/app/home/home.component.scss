@@ -8,12 +8,7 @@
 
 .nav {
   flex-basis: 220px;
-  height: 600px;
-}
-
-.main-content {
-  height: 600px;
-  width: 580px;
+  height: 100vh;
 }
 
 .mat-subheader {
@@ -22,4 +17,9 @@
 
 mat-list-item {
   cursor: pointer;
+}
+
+.main-content {
+  display: block;
+  width: 100%;
 }

@@ -1,12 +1,12 @@
 .container {
   position: relative;
-  width: 580px;
-  height: 600px;
+  height: 100%;
+  width: 100%;
 }
 
 .content-one {
-  width: 580px;
-  height: 600px;
+  width: 100%;
+  height: 100%;
   padding-top: 0;
   margin-top: 0;
   .pg-title {
@@ -30,19 +30,18 @@
 }
 
 .content-two {
-  width: 580px;
-  height: 600px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
   .brand {
-    width: 580px;
+    width: 100%;
     height: 100px;
-    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .name{
-      width: 250px;
       height: 25px;
-      position: absolute;
-      bottom: 0;
-      margin-left: 165px;
-      margin-right: 165px;
       text-align: center;
       size: 24px;
       mat-icon{
@@ -58,11 +57,13 @@
   .form-passwd{
     width: 100%;
     height: 450px;
+    align-items: center;
+    text-align: center;
     .form{
       padding-top: 50px;
       min-width: 150px;
       max-width: 500px;
-      width: 100%;
+      margin: auto;
     }
     .form-full-width {
       width: 100%;
@@ -78,15 +79,18 @@
   width: 100%;
   height: 50px;
   position: absolute;
+  text-align: center;
   bottom: 0;
   z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   .step-stepper {
-    width: 360px;
     height: 40px;
-    float: left;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 20px;
     .circle {
       margin-left: 75px;
       border-radius: 50%;
@@ -104,8 +108,6 @@
   }
   .btn {
     height: 40px;
-    width: 220px;
-    float: left;
     color: white;
     button {
       text-transform: uppercase;

@@ -1,19 +1,23 @@
-.flex-conteiner {
-  display: flex;
+.flex-container {
+  display: block;
   align-items: stretch;
-  size: 16px;
+  height: 100%;
+  width: 100%;
 }
 
 .content {
+  flex: 1;
   display: flex;
   align-items: center;
-  width: 580px;
+  width: 100%;
+  height: 100%;
 }
 
 .passwd-list {
   width: 50%;
+  max-width: 400px;
   background-color: #E8EAED;
-  height: 600px;
+  height: 100%;
   position: relative;
   mat-list {
     overflow: auto;
@@ -23,7 +27,7 @@
 .passwd-selectd {
   position: relative;
   width: 50%;
-  height: 600px;
+  height: 100%;
 }
 
 #triangle-right {
